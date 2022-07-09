@@ -1,12 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFrameworks>net6.0;net48;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Authors>DiSaber</Authors>
     <Description>Needed a cryptographically secure Guid for a project so I might as well share it for anyone else to use. Create a new CryptoGuid instance and you can retrieve the random bytes and string representation.</Description>
+    <RepositoryUrl>https://github.com/DiSaber/CSGuid</RepositoryUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Version>1.0.2</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\benam\source\repos\CSGUID\LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+  </ItemGroup>
 
 </Project>
